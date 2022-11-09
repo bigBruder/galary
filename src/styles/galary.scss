@@ -1,0 +1,36 @@
+.galary {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  &__link {
+    text-decoration: none;
+    background-color: rgb(201, 163, 94);
+    border-radius: 200px;
+  }
+
+  &__li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin: 50px 20px 30px;
+
+    &-image {
+      display: flex;
+      margin: auto;
+      width: 40%;
+      height: 40%;
+
+      &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+    }
+
+    &-author {
+      display: flex;
+      justify-content: center;
+      color: hsl(158, 70%, 86%);
+    }
+  }
+}
